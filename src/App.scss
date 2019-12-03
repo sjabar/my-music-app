@@ -1,0 +1,15 @@
+.viewtable {
+    display: table;
+    width: 100%;
+}
+.viewtable .left-content {
+    display: table-cell;
+    vertical-align: top;
+    float: none;
+    width:450px;
+}
+ .viewtable .right-content {
+    display: table-cell;
+    vertical-align: top;
+    float: none;
+ }

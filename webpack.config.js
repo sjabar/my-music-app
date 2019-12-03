@@ -13,11 +13,11 @@ const path = require('path');
  },
  output: {
     filename: '[name].bundle.js',
-    publicPath: '/public/',
+    publicPath: '/',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
-    // new CleanWebpackPlugin(['dist/*']) for < v2 versions of CleanWebpackPlugin
+   //  new CleanWebpackPlugin(['dist/*']),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
         template: './public/index.html'
@@ -56,7 +56,12 @@ const path = require('path');
             ],
           },
      ]
- }
+ },
+ devServer: {
+    port: 3000,
+    historyApiFallback: true
+
+}
    
     
   };

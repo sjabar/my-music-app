@@ -20,7 +20,7 @@
     "webpack-dev-server": "^3.9.0"
   },
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --hot --inline"
   },
   "eslintConfig": {
     "extends": "react-app"
